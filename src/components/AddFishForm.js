@@ -2,12 +2,15 @@ import React from 'react';
 
 class AddFishForm extends React.Component {
 
-    nameRef = React.createRef();
-    priceRef = React.createRef();
-    statusRef = React.createRef();
-    descRef = React.createRef();
-    imageRef = React.createRef();
-
+    constructor(props) {
+        super(props);
+        this.nameRef = React.createRef();
+        this.priceRef = React.createRef();
+        this.statusRef = React.createRef();
+        this.descRef = React.createRef();
+        this.imageRef = React.createRef();
+    }
+    
     createFish = (e) => {
         // 1. stop the form from submitting
         e.preventDefault();
